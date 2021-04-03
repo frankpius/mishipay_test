@@ -1,10 +1,11 @@
 # mishipay_test
 
 Describe how did you test it and provide output?
-Tried to Access the Nginx UI with https protocol on Chrome which displayed Sample Web Application.
-Link: https://35.208.214.184/
+Deployed a Node JS Application on Port 5000 accessible from Chrome UI.
+Nginx was configured as reverse proxy with SSL making the Node JS Application accessible on HTTP Port 80 instead of its original Port 5000.
+
 
 Weakness:
 Scalability is not covered in this Dockerfile
 Currently both HTTP & HTTPS are supported. In Production, HTTP Requests should be re-directed to HTTPS.
-Self-signed Certificated needs to be replaced by Certificate Authority for better security.
+Self-signed Certificated needs to be replaced by Certified Authority for better security.
